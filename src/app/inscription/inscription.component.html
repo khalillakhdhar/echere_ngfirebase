@@ -35,7 +35,6 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
         <input class="form-control" #cmail="ngModel" [(ngModel)]="user.login" required type="email" name="mail"><td></td></tr><!-- ngModel pour la valeur-->
     <tr><td >Mot de passe :</td><input class="form-control" #cpass="ngModel" type="password" required [(ngModel)]="user.mdp" name="mdp"><td></td></tr>
-    <tr><td >confirmer le mot de passe :</td><input class="form-control" #cpass="ngModel" type="password" required [(ngModel)]="user.mdp" name="mdp"><td></td></tr>
   <tr><td><div class="field-wrapper terms_condition">
    <div class="n-chk">
   <label class="new-control new-checkbox checkbox-primary">
@@ -45,8 +44,8 @@
      </div>
 
  </div></td></tr>
-  <tr><td colSpan="2"><input [disabled]="myform.invalid" class="btn btn-primary"  type="button" value="se connecter"><br><!-- [] pour confirmer un etat-->
-  <a href="">Se connecter</a>
+  <tr><td colSpan="2"><input  class="btn btn-primary"  type="button" value="se connecter"><br><!-- [] pour confirmer un etat-->
+  <a href="">S'inscrire</a>
     
     </td></tr>
    <tr><td><div class="division">
